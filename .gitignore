@@ -1,0 +1,20 @@
+# 最初にすべての階層のファイルを無視します
+# 階層は必要なだけ追加する
+### all ignore ###
+/*
+/.**
+
+### not ignore ###
+!/.zshrc
+!/.zshenv
+!/.config
+!/.gitignore_global
+!/.gitconfig_shared
+!/.bin/
+!/.bin/**
+!/.bin.local
+
+!/README.md
+!/LICENSE
+!.gitignore
+!.gitkeep
