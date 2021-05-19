@@ -5,7 +5,19 @@ alias cdwin='cd /mnt/c'
 alias v='nvim'
 alias zshrc="nvim ~/.zshrc"
 alias ls='lsd'
-alias lsa='ls -a'
+alias lsa='lsd -a'
+alias ls='lsd --color=auto'
+alias ls='lsd -G'
+alias ll='lsd -alF'
+alias ll='lsd -lh'
+alias ll='lsd -l'
+alias la='lsd -A'
+alias la='lsd -a'
+alias l='lsd -CF'
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -i'
+
 
 function custom_cd()
 {
@@ -20,7 +32,7 @@ export TERM=xterm-256color
 export PATH=$HOME/go/bin:$PATH
 export NVM_PYTHON_LOG_FILE=/tmp/logI
 export NVIM_PYTHON_LOG_LEVEL=DEBUG
-
+export DOCKER_CONTENT_TRUST=1
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
