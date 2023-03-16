@@ -35,8 +35,13 @@ chsh -s /usr/bin/zsh $USER
 brew install zplug
 ln -s /home/linuxbrew/.linuxbrew/opt/zplug ~/.zplug
 
-set -u
+sleep 2
 
+echo "================================="
+echo "Crete Symbolic link"
+echo "================================="
+
+set -u
 
 DOT_DIR="$HOME/dotfiles"
 
