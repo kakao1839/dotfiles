@@ -85,7 +85,7 @@ if [ ! -d ${DOT_DIR} ]; then
         [[ "$f" == ".gitignore" ]] && continue
         [[ "$f" == ".DS_Store" ]] && continue
         [[ "$f" == "README.md" ]] && continue
-        [[ "$f" == ".bin" ]] && continue
+        [[ "$f" == "setup.sh" ]] && continue
 
         ln -snf $DOT_DIR/"$f" $HOME/".$f"
         echo "Installed .$f"
