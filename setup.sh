@@ -13,7 +13,7 @@ has() {
 if has "git"; then
     git clone https://github.com/kisqragi/dotfiles.git ${DOT_DIR}
 elif has "curl" || has "wget"; then
-    TARBALL="https://github.com/kisqragi/dotfiles/archive/master.tar.gz"
+    TARBALL="https://github.com/kakao1839/dotfiles/archive/master.tar.gz"
     if has "curl"; then
         curl -L ${TARBALL} -o master.tar.gz
     else
