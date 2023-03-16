@@ -1,0 +1,1 @@
+/home/gou/dotfiles/.bashrc
