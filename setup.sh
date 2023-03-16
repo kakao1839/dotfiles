@@ -33,7 +33,7 @@ for f in .??*; do
     [ "$f" = ".git" ] && continue
     [ "$f" = ".gitconfig.local.template" ] && continue
     [ "$f" = ".gitmodules" ] && continue
-    [ "$f" = "bin" ] && continue
+    [ "$f" = ".bin" ] && continue
     # シンボリックリンクを貼る
     ln -snfv ${PWD}/"$f" ~/
 done
