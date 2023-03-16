@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Please install NerdFont"
+echo "https://www.nerdfonts.com"
 ### Create a symbolic link ###
 echo "================================="
 echo "Create a symbolic link"
