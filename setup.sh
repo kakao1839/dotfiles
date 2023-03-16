@@ -1,5 +1,5 @@
-chmod -x /bin/install.sh
-/bin/install.sh
+chmod +x ~/dotfiles/.bin/install.sh
+~/dotfiles/.bin/install.sh
 
 set -u
 
