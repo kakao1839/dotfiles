@@ -1,0 +1,105 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+add_newline = false
+
+right_format = """
+$jobs\
+$package\
+$battery\
+"""
+
+format = """
+[](#a3aed2)\
+[  ](bg:#a3aed2 fg:#e06c75)\
+[](bg:#769ff0 fg:#a3aed2)\
+$directory\
+[](fg:#769ff0 bg:#394260)\
+$git_branch\
+$git_status\
+[](fg:#394260 bg:#212736)\
+$nodejs\
+$rust\
+$golang\
+$php\
+[](fg:#212736)\
+\n$character
+"""
+
+[character]
+success_symbol = ' [❯❯](bold green) '
+error_symbol = ' [❯❯](bold red) '
+
+[package]
+format = 'via [📦 $version](208 bold) '
+
+[username]
+show_always = true
+style_user = "bg:#a3aed2"
+style_root = "bg:#a3aed2"
+format = '[$user ]($style)'
+disabled = false
+
+[jobs]
+symbol = '👷 '
+number_threshold = 0
+symbol_threshold = 0
+
+[directory]
+style = "fg:#e3e5e5 bg:#769ff0"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = " 📖"
+"Downloads" = " 󰅢 "
+"Music" = " 🎵"
+"Pictures" = " 📷"
+"Programing" = " 😈"
+"~" = " 🏠"
+".config" = " 🧰"
+
+[git_branch]
+symbol = "🤖"
+style = "bg:#394260"
+format = '[[ $symbol $branch](fg:#769ff0 bg:#394260)]($style)'
+
+[git_status]
+conflicted = '⚔️'
+ahead = ' 🪐💨'
+behind = ' 😰'
+diverged = ' 😵'
+up_to_date = ' ✔'
+untracked = ' 🤷'
+stashed = ' 📦'
+modified = ' 📝'
+staged = '[++\($count\)](fg:#98c379 bg:#394260)($style)'
+renamed = ' 👅'
+deleted = ' 🗑'
+style = "bg:#394260"
+format = '[[( $all_status $ahead_behind )](fg:#769ff0 bg:#394260)]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:#212736"
+format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:#212736"
+format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+
+[golang]
+symbol = "ﳑ"
+style = "bg:#212736"
+format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+
+[php]
+symbol = ""
+style = "bg:#212736"
+format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+# style = "bg:#1d2230"
+format = '[[ ⏰ $time ](#a0a9cb)]($style)'
