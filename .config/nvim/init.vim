@@ -1,4 +1,4 @@
-"colorscheme hybrid
+colorscheme hybrid
 
 " XDG Base Directory {{{
 if empty($XDG_DATA_HOME) | let $XDG_DATA_HOME = expnad('$HOME/.local/share') | endif
@@ -135,10 +135,6 @@ let g:jetpack#optimization=2
 packadd vim-jetpack = 1
 call jetpack#begin()
 Jetpack 'tani/vim-jetpack', {'opt': 1} "bootstrap
-Jetpack 'vim-airline/vim-airline'
-Jetpack 'vim-airline/vim-airline-themes'
-Jetpack 'lambdalisue/fern.vim'
-
 Jetpack 'joshdick/onedark.vim'
 Jetpack 'cocopon/iceberg.vim'
 Jetpack 'ghifarit53/tokyonight-vim'
@@ -175,6 +171,7 @@ let g:lightline = {
 " filer
 Jetpack 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 let g:NERDTreeShowHidden = 1
+let NERDTreeWinSize=23
 augroup nerdtree
   autocmd!
   autocmd FileType nerdtree setlocal signcolumn=auto
