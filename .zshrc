@@ -1,3 +1,5 @@
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
 # Set up the prompt
 
 # autoload -Uz promptinit
@@ -11,6 +13,7 @@ cd ~
 # alias
 alias cdwin='cd /mnt/c'
 alias v='nvim'
+alias vi='nvim'
 alias zshrc="nvim ~/.zshrc"
 alias ls='lsd'
 alias lsa='lsd -a'
@@ -84,3 +87,7 @@ export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
 #gh
 eval "$(gh completion -s zsh)"
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+export PATH="/home/linuxbrew/.linuxbrew/sbin:$PATH"
