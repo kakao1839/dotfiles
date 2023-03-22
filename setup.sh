@@ -87,8 +87,12 @@ yes | curl -sS https://starship.rs/install.sh | sh
 
 ################################################
 brew install lsd
-sleep 2
+sleep 3
 ################################################
+
+brew install neovim
+yes | curl -fLo ~/.local/share/nvim/site/pack/jetpack/opt/vim-jetpack/plugin/jetpack.vim --create-dirs https://raw.githubusercontent.com/tani/vim-jetpack/master/plugin/jetpack.vim
+
 echo END
 exec $SHELL -l
 

@@ -169,18 +169,17 @@ let g:lightline = {
 " }}}
 
 " filer
-Jetpack 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 let g:NERDTreeShowHidden = 1
-let NERDTreeWinSize=23
 augroup nerdtree
   autocmd!
   autocmd FileType nerdtree setlocal signcolumn=auto
 augroup END
 nnoremap <C-e> :NERDTreeToggle<CR>
-Jetpack 'Xuyuanp/nerdtree-git-plugin'
-Jetpack 'ryanoasis/vim-devicons'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'ryanoasis/vim-devicons'
 
-" japanese documentation
+
 Jetpack 'vim-jp/vimdoc-ja'
 
 " surround
